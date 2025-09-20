@@ -1,0 +1,26 @@
+# Nmap 7.95 scan initiated Fri Sep 19 18:34:37 2025 as: /usr/lib/nmap/nmap -A -T4 -p- -oN nmap_scan guardian.htb
+Nmap scan report for guardian.htb (10.10.11.84)
+Host is up (0.10s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 9c:69:53:e1:38:3b:de:cd:42:0a:c8:6b:f8:95:b3:62 (ECDSA)
+|_  256 3c:aa:b9:be:17:2d:5e:99:cc:ff:e1:91:90:38:b7:39 (ED25519)
+80/tcp open  http    Apache httpd 2.4.52
+|_http-title: Guardian University - Empowering Future Leaders
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.19
+Network Distance: 2 hops
+Service Info: Host: _default_; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 3306/tcp)
+HOP RTT       ADDRESS
+1   152.99 ms 10.10.16.1
+2   57.22 ms  guardian.htb (10.10.11.84)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 19 18:42:08 2025 -- 1 IP address (1 host up) scanned in 451.51 seconds
